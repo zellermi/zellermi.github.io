@@ -1,0 +1,40 @@
+WEB DEVELOPEMENT, USEFUL RESSOURCES:
+
+LINKS: 
+
+	overview, web docs: 
+		https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics?retiredLocale=de
+COURSES:
+
+	code camp:
+		https://www.freecodecamp.org/learn/2022/responsive-web-design/
+	code academy:
+		https://www.codecademy.com/courses/learn-html/lessons/intro-to-html/exercises/intro
+	The Odin project:
+		https://www.theodinproject.com/lessons/foundations-introduction-to-web-development
+
+
+VIDEOS:
+	useful ressources:
+		https://www.youtube.com/watch?v=TG6XSFeOT3g&ab_channel=DylanCole
+	Full HTML course/overview:
+		https://www.youtube.com/watch?v=RjHflb-QgVc&list=PLoYCgNOIyGAB_8_iq1cL8MVeun7cB6eNc&index=2&ab_channel=LearnCode.academy
+
+JAVA SCRIPT:
+	https://javascript.info/
+	
+BOOKS:
+
+	Books like "Eloquent JavaScript" by Marijn Haverbeke, "HTML and CSS: Design and Build Websites" by Jon Duckett, and "JavaScript: The 	Good Parts" by Douglas Crockford are highly recommended for learning web development.
+
+
+
+
+
+
+Additional resources from Odin project:
+
+https://dev.to/theodinproject/becoming-a-top-success-story-mindset-3dp2
+
+
+

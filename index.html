@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schachklub Langenthal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #fff;
+        }
+        header {
+            background-color: #222;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #222;
+            padding: 10px 20px; 
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        section {
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+        #chess-image {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: block;
+            cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Schachklub Langenthal</h1>
+        <a href="index.html"> <!-- Directly specify the URL in the anchor tag -->
+            <img src="chess.jpg" alt="Chess Image" id="chess-image">
+        </a>
+    </header>
+    
+    <nav>
+        <a href="#" id="home-link">Home</a>
+        <a href="#" id="about-link">About</a>
+        <a href="#" id="tournaments-link">Turniere</a>
+        <a href="#" id="contact-link">Kontakt</a>
+        <a href="#" id="program-link">Programm</a> <!-- Update the id to "program-link" -->
+    </nav>
+    <main>
+        <section id="home-section" class="active">
+            <h2>Wilkommen im Schachklub Langenthal</h2>
+            <p>Webseite mit Navigation jetzt</p>
+        </section>
+
+        <section id="Programm-section">
+            <h2>Programm</h2>
+            <p>The programm is HERE</p>
+        </section>
+
+        <section id="about-section">
+            <h2>About Our Club</h2>
+            <p>Im Jahre 1933 wurde der Schachklub Langenthal gegründet. Wie jeder Verein hat sich auch der Schachklub in all den Jahren verändert. Das Spiellokal wurde einige Male gewechselt. Seit 1999 spielen wir jeweils am Donnerstag um 19.45 Uhr im Kath. Kirchgemeindehaus an der Hasenmattstrasse 36 in Langenthal.</p>
+        </section>
+
+        <section id="tournaments-section">
+            <h2>Turniere</h2>
+            <ul>
+                <li>Blitzmeisterschaft 15. Februar</li>
+                <li>Klubmeisterschaft 1.Runde 23. Februar</li>
+            </ul>
+        </section>
+
+        <section id="contact-section">
+            <h2>Kontakt</h2>
+            <p>Immer freuen wir uns für neue Mitglieder. Gerne erwarten wir Dich an einem Donerstag im Klublokal in Langenthal, Hasenmattstrasse 36, 4900 Langenthal</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Schachklub Langenthal</p>
+    </footer>
+
+    <script>
+        // Function to toggle visibility of sections based on navigation clicks
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+        }
+
+        // Event listeners to show/hide sections
+        document.getElementById('home-link').addEventListener('click', function() {
+            showSection('home-section');
+        });
+        document.getElementById('about-link').addEventListener('click', function() {
+            showSection('about-section');
+        });
+        document.getElementById('tournaments-link').addEventListener('click', function() {
+            showSection('tournaments-section');
+        });
+        document.getElementById('contact-link').addEventListener('click', function() {
+            showSection('contact-section');
+        });
+        document.getElementById('Programm-link').addEventListener('click', function() {
+            showSection('Programm-section');
+        });
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
