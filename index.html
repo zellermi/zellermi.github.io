@@ -3,145 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schachklub Langenthal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #333;
-            color: #fff;
-        }
-        header {
-            background-color: #222;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #222;
-            padding: 10px 20px; 
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        section {
-            display: none;
-        }
-        section.active {
-            display: block;
-        }
-        #chess-image {
-            width: 100%;
-            max-width: 1000px;
-            margin: 0 auto;
-            display: block;
-            cursor: pointer; /* Add cursor pointer to indicate it's clickable */
-        }
-    </style>
+    <title>Handcrafted Wood-Burned Art</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Schachklub Langenthal</h1>
-        <a href="index.html"> <!-- Directly specify the URL in the anchor tag -->
-            <img src="chess.jpg" alt="Chess Image" id="chess-image">
-        </a>
-    </header>
-    
-    <nav>
-        <a href="#" id="home-link">Home</a>
-        <a href="#" id="about-link">About</a>
-        <a href="#" id="tournaments-link">Turniere</a>
-        <a href="#" id="contact-link">Kontakt</a>
-        <a href="#" id="program-link">Programm</a> <!-- Update the id to "program-link" -->
-    </nav>
-    <main>
-        <section id="home-section" class="active">
-            <h2>Wilkommen im Schachklub Langenthal</h2>
-            <p>Webseite mit Navigation jetzt</p>
-        </section>
 
-        <section id="Programm-section">
-            <h2>Programm</h2>
-            <p>The programm is HERE</p>
-        </section>
+<header>
+    <h1>Holzbrenn Kunst</h1>
+    <p>Individuelle Brandmalerei auf Schneidebrettern Schachteln oder Dekor – mit Sorgfalt handgefertigt.</p>
+</header>
 
-        <section id="about-section">
-            <h2>About Our Club</h2>
-            <p>Im Jahre 1933 wurde der Schachklub Langenthal gegründet. Wie jeder Verein hat sich auch der Schachklub in all den Jahren verändert. Das Spiellokal wurde einige Male gewechselt. Seit 1999 spielen wir jeweils am Donnerstag um 19.45 Uhr im Kath. Kirchgemeindehaus an der Hasenmattstrasse 36 in Langenthal.</p>
-        </section>
+<section>
+    <h2>About </h2>
+    <p class="about">
+    Jedes Stück wird vollständig von Hand in traditioneller Pyrographietechnik gebrannt.
+    Von personalisierten Küchenaccessoires bis hin zu dekorativen Kunstwerken – jede Kreation zelebriert
+    die Wärme und Schönheit von Naturholz.
+</p>
+    <img src="images/BA_hund.jpeg" alt="Wood burned art" class="about-image">
 
-        <section id="tournaments-section">
-            <h2>Turniere</h2>
-            <ul>
-                <li>Blitzmeisterschaft 15. Februar</li>
-                <li>Klubmeisterschaft 1.Runde 23. Februar</li>
-            </ul>
-        </section>
+</section>
 
-        <section id="contact-section">
-            <h2>Kontakt</h2>
-            <p>Immer freuen wir uns für neue Mitglieder. Gerne erwarten wir Dich an einem Donerstag im Klublokal in Langenthal, Hasenmattstrasse 36, 4900 Langenthal</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; Schachklub Langenthal</p>
-    </footer>
+<section>
+    <h2>Gallery</h2>
 
-    <script>
-        // Function to toggle visibility of sections based on navigation clicks
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('main section');
-            sections.forEach(section => {
-                if (section.id === sectionId) {
-                    section.classList.add('active');
-                } else {
-                    section.classList.remove('active');
-                }
-            });
-        }
+    <div class="gallery-wrapper">
+        <div class="gallery" id="gallery">
+            <img src="images/BA_itachi.jpeg" alt="Wood burned art" class="gallery-image">
+            <img src="images/BA_sloth.jpeg" alt="Wood burned art" class="gallery-image">
+            <img src="images/BA_taufbox.jpeg" alt="Wood burned art" class="gallery-image">
+            <img src="images/BA_hund.jpeg" alt="Wood burned art" class="gallery-image">
+            <img src="images/art5.jpg" alt="Wood burned art" class="gallery-image">
+        </div>
+    </div>
 
-        // Event listeners to show/hide sections
-        document.getElementById('home-link').addEventListener('click', function() {
-            showSection('home-section');
-        });
-        document.getElementById('about-link').addEventListener('click', function() {
-            showSection('about-section');
-        });
-        document.getElementById('tournaments-link').addEventListener('click', function() {
-            showSection('tournaments-section');
-        });
-        document.getElementById('contact-link').addEventListener('click', function() {
-            showSection('contact-section');
-        });
-        document.getElementById('Programm-link').addEventListener('click', function() {
-            showSection('Programm-section');
-        });
+    <div class="hint">← scroll or click →</div>
+</section>
 
-    </script>
+<section>
+    <h2>Pricing </h2>
+
+    <div class="pricing">
+        <div class="price-card">
+            <h3>Schneidebrett</h3>
+            <p class="price"> 40.-</p>
+            <p>Einfaches Muster / Schrift</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Custom Board</h3>
+            <p class="price"> 70.-</p>
+            <p>Detailiertes custom Design </p>
+        </div>
+
+        <div class="price-card">
+            <h3>Gebrannte Deko</h3>
+            <p class="price">90.-</p>
+            <p>Taufbox, Accessories</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Custom Bestellung</h2>
+
+    <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+        <label>Name</label>
+        <input type="text" name="Name" required>
+
+        <label>Email</label>
+        <input type="email" name="Email" required>
+
+        <label>Item Type</label>
+        <input type="text" name="Item">
+
+        <label>Design Details</label>
+        <textarea name="Details"></textarea>
+ 
+        <button type="submit">Send Inquiry</button>
+    </form>
+</section>
+
+<section class="instagram">
+    <h2>Follow the Process</h2>
+    <p>Sieh neuste Werke und Inspiration auf Instagram.</p>
+    <a href=https://www.instagram.com/burning.art_/ target="_blank">Visit Instagram</a>
+</section>
+
+<footer>
+    © 2025 Handgemachte Holzbrenn Kunst
+    @ Vorname Nachname
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <img src="" alt="">
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
